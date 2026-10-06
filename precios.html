@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precios y planes — SolarAndina</title>
+  <meta name="description" content="Conocé nuestros planes de instalación solar: Hogar, Pyme e Industria. Precios transparentes, financiamiento disponible y ROI garantizado." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f59e0b'%3E%3Cpath d='M12 7a5 5 0 100 10 5 5 0 000-10zM2 13h2M20 13h2M11 2v2M11 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41'/%3E%3C/svg%3E" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] } } } };
+  </script>
+</head>
+<body class="bg-neutral-950 text-white">
+
+  <!-- TOPBAR -->
+  <div class="topbar text-neutral-300 text-xs py-2 border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-4">
+        <a href="tel:+56955551234" class="flex items-center gap-1.5 hover:text-amber-400 transition">
+          <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+56 9 5555 1234</span>
+        </a>
+        <span class="hidden md:flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Lun-Vie 9:00 a 18:30</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="#" aria-label="Facebook" class="hover:text-amber-400 transition"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.95 9-10z"/></svg></a>
+        <a href="#" aria-label="Instagram" class="hover:text-amber-400 transition"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-amber-400 transition"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg></a>
+        <a href="#" aria-label="YouTube" class="hover:text-amber-400 transition"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar sticky top-0 z-50 bg-neutral-950">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2 font-extrabold text-xl">
+          <span class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center text-neutral-900">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+          </span>
+          <span class="gradient-text">SolarAndina</span>
+        </a>
+        <div class="hidden md:flex items-center gap-7">
+          <a href="index.html" class="nav-link text-neutral-300 hover:text-white">Inicio</a>
+          <a href="sobre-nosotros.html" class="nav-link text-neutral-300 hover:text-white">Sobre nosotros</a>
+          <a href="servicios.html" class="nav-link text-neutral-300 hover:text-white">Servicios</a>
+          <a href="galeria.html" class="nav-link text-neutral-300 hover:text-white">Galería</a>
+          <a href="precios.html" class="nav-link active text-neutral-300 hover:text-white">Precios</a>
+          <a href="clases.html" class="nav-link text-neutral-300 hover:text-white">Clases</a>
+          <a href="contacto.html" class="nav-link text-neutral-300 hover:text-white">Contacto</a>
+        </div>
+        <a href="contacto.html" class="hidden md:inline-flex btn-primary bg-amber-500 hover:bg-amber-400 text-neutral-900 px-4 py-2 rounded-lg font-bold text-sm">Cotizar Gratis</a>
+        <button id="menu-toggle" class="md:hidden text-white p-2" aria-label="Menú" aria-expanded="false">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu md:hidden">
+        <div class="py-3 border-t border-neutral-800 flex flex-col gap-1">
+          <a href="index.html" class="px-3 py-2 rounded text-neutral-300 hover:text-amber-400">Inicio</a>
+          <a href="sobre-nosotros.html" class="px-3 py-2 rounded text-neutral-300 hover:text-amber-400">Sobre nosotros</a>
+          <a href="servicios.html" class="px-3 py-2 rounded text-neutral-300 hover:text-amber-400">Servicios</a>
+          <a href="galeria.html" class="px-3 py-2 rounded text-neutral-300 hover:text-amber-400">Galería</a>
+          <a href="precios.html" class="px-3 py-2 rounded text-amber-400 bg-amber-500/10 font-semibold">Precios</a>
+          <a href="clases.html" class="px-3 py-2 rounded text-neutral-300 hover:text-amber-400">Clases</a>
+          <a href="contacto.html" class="px-3 py-2 rounded text-neutral-300 hover:text-amber-400">Contacto</a>
+          <a href="contacto.html" class="mt-2 btn-primary text-center bg-amber-500 text-neutral-900 px-4 py-2 rounded-lg font-bold text-sm">Cotizar Gratis</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-pattern relative overflow-hidden">
+    <div class="sun-ray" style="width:280px;height:280px;top:-50px;right:-50px"></div>
+    <div class="spark" style="top:20%;left:10%"></div>
+    <div class="spark" style="top:60%;left:85%;animation-delay:1s"></div>
+
+    <div class="max-w-7xl mx-auto px-4 py-16 md:py-20 text-center">
+      <div class="reveal">
+        <span class="inline-flex items-center gap-2 bg-amber-500/10 text-amber-400 px-3 py-1 rounded-full text-xs font-semibold mb-6 border border-amber-500/20">
+          <span class="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></span>
+          Planes y precios
+        </span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+          Inversión <span class="gradient-text">transparente</span>, retorno real
+        </h1>
+        <p class="text-lg text-neutral-300 max-w-2xl mx-auto leading-relaxed">
+          Tres planes diseñados para cada necesidad. Financiamiento disponible, ROI garantizado por escrito y soporte de por vida.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4">
+      <div id="plans-grid" class="grid md:grid-cols-3 gap-6 lg:gap-8"></div>
+    </div>
+  </section>
+
+  <!-- TABLA COMPARATIVA -->
+  <section class="py-16 md:py-20 bg-neutral-900/30 border-y border-neutral-800">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-10 reveal">
+        <span class="tag bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-3">Comparativa</span>
+        <h2 class="text-3xl md:text-4xl font-black">Compará y <span class="gradient-text">elegí</span></h2>
+      </div>
+      <div class="overflow-x-auto reveal">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-neutral-800">
+              <th class="text-left py-4 px-4 text-neutral-400 font-semibold">Característica</th>
+              <th class="text-center py-4 px-4 text-amber-400 font-black">Hogar</th>
+              <th class="text-center py-4 px-4 text-amber-400 font-black bg-amber-500/10">Pyme</th>
+              <th class="text-center py-4 px-4 text-amber-400 font-black">Industria</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-neutral-800">
+            <tr><td class="py-3 px-4 text-neutral-300">Potencia</td><td class="text-center py-3 px-4">3-5 kWp</td><td class="text-center py-3 px-4 bg-amber-500/5">15-25 kWp</td><td class="text-center py-3 px-4">50+ kWp</td></tr>
+            <tr><td class="py-3 px-4 text-neutral-300">Paneles</td><td class="text-center py-3 px-4">8-12</td><td class="text-center py-3 px-4 bg-amber-500/5">28-46</td><td class="text-center py-3 px-4">92+</td></tr>
+            <tr><td class="py-3 px-4 text-neutral-300">Producción mensual</td><td class="text-center py-3 px-4">450-750 kWh</td><td class="text-center py-3 px-4 bg-amber-500/5">2.250-3.750 kWh</td><td class="text-center py-3 px-4">7.500+ kWh</td></tr>
+            <tr><td class="py-3 px-4 text-neutral-300">Inversor</td><td class="text-center py-3 px-4">Mono 5kW</td><td class="text-center py-3 px-4 bg-amber-500/5">Trifásico 25kW</td><td class="text-center py-3 px-4">String/Central</td></tr>
+            <tr><td class="py-3 px-4 text-neutral-300">Monitoreo</td><td class="text-center py-3 px-4">App básica</td><td class="text-center py-3 px-4 bg-amber-500/5">App + Web 24/7</td><td class="text-center py-3 px-4">SCADA completo</td></tr>
+            <tr><td class="py-3 px-4 text-neutral-300">Mantenimiento anual</td><td class="text-center py-3 px-4"><svg class="w-5 h-5 mx-auto text-rose-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></td><td class="text-center py-3 px-4 bg-amber-500/5"><svg class="w-5 h-5 mx-auto text-emerald-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></td><td class="text-center py-3 px-4"><svg class="w-5 h-5 mx-auto text-emerald-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></td></tr>
+            <tr><td class="py-3 px-4 text-neutral-300">ROI garantizado</td><td class="text-center py-3 px-4">No</td><td class="text-center py-3 px-4 bg-amber-500/5">5 años</td><td class="text-center py-3 px-4">A medida</td></tr>
+            <tr><td class="py-3 px-4 text-neutral-300">Garantía paneles</td><td class="text-center py-3 px-4">25 años</td><td class="text-center py-3 px-4 bg-amber-500/5">25 años</td><td class="text-center py-3 px-4">25 años</td></tr>
+            <tr><td class="py-3 px-4 text-neutral-300">Plazo de instalación</td><td class="text-center py-3 px-4">1-2 días</td><td class="text-center py-3 px-4 bg-amber-500/5">3-5 días</td><td class="text-center py-3 px-4">7-15 días</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS INDIVIDUALES -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-10 reveal">
+        <span class="tag bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-3">Servicios individuales</span>
+        <h2 class="text-3xl md:text-4xl font-black">También podés <span class="gradient-text">contratar por servicio</span></h2>
+      </div>
+      <div id="ind-prices" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 stagger"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 md:py-20 bg-neutral-900/30 border-y border-neutral-800">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-10 reveal">
+        <span class="tag bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-3">Preguntas frecuentes</span>
+        <h2 class="text-3xl md:text-4xl font-black">Resolvemos tus <span class="gradient-text">dudas</span></h2>
+      </div>
+      <div id="faq-list" class="space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 gradient-bg opacity-10"></div>
+    <div class="max-w-4xl mx-auto px-4 relative text-center reveal-scale">
+      <h2 class="text-3xl md:text-5xl font-black mb-4">¿Listo para <span class="gradient-text">empezar</span>?</h2>
+      <p class="text-neutral-300 text-lg mb-8">Estudio técnico gratuito y cotización cerrada en menos de 48 horas.</p>
+      <a href="contacto.html" class="btn-primary gradient-bg text-neutral-900 px-7 py-3.5 rounded-lg font-bold inline-flex items-center gap-2">
+        Solicitar cotización
+        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" x2="19" y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-neutral-900 border-t border-neutral-800 pt-16 pb-6">
+    <div class="max-w-7xl mx-auto px-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div>
+        <a href="index.html" class="flex items-center gap-2 font-extrabold text-xl mb-4">
+          <span class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center text-neutral-900">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>
+          </span>
+          <span class="gradient-text">SolarAndina</span>
+        </a>
+        <p class="text-neutral-400 text-sm leading-relaxed mb-4">Empresa chilena líder en energía solar fotovoltaica. Iluminamos Chile con el sol desde 2013.</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-amber-500 hover:text-neutral-900 flex items-center justify-center transition"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.95 9-10z"/></svg></a>
+          <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-amber-500 hover:text-neutral-900 flex items-center justify-center transition"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+          <a href="#" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-amber-500 hover:text-neutral-900 flex items-center justify-center transition"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-bold text-white mb-4">Navegación</h3>
+        <ul class="space-y-2 text-sm text-neutral-400">
+          <li><a href="index.html" class="hover:text-amber-400 transition">Inicio</a></li>
+          <li><a href="sobre-nosotros.html" class="hover:text-amber-400 transition">Sobre nosotros</a></li>
+          <li><a href="servicios.html" class="hover:text-amber-400 transition">Servicios</a></li>
+          <li><a href="galeria.html" class="hover:text-amber-400 transition">Galería</a></li>
+          <li><a href="precios.html" class="hover:text-amber-400 transition">Precios</a></li>
+          <li><a href="clases.html" class="hover:text-amber-400 transition">Clases</a></li>
+          <li><a href="contacto.html" class="hover:text-amber-400 transition">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-white mb-4">Servicios</h3>
+        <ul class="space-y-2 text-sm text-neutral-400">
+          <li><a href="servicios.html#residencial" class="hover:text-amber-400 transition">Residencial</a></li>
+          <li><a href="servicios.html#comercial" class="hover:text-amber-400 transition">Comercial</a></li>
+          <li><a href="servicios.html#offgrid" class="hover:text-amber-400 transition">Off-Grid</a></li>
+          <li><a href="servicios.html#mantenimiento" class="hover:text-amber-400 transition">Mantenimiento</a></li>
+          <li><a href="servicios.html#bombeo" class="hover:text-amber-400 transition">Bombeo solar</a></li>
+          <li><a href="servicios.html#termotanque" class="hover:text-amber-400 transition">Termotanques</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-white mb-4">Contacto</h3>
+        <ul class="space-y-3 text-sm text-neutral-400">
+          <li class="flex items-start gap-2"><svg class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span id="footer-address">Av. Apoquindo 4712, Las Condes, Santiago</span></li>
+          <li class="flex items-start gap-2"><svg class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span id="footer-phone">+56 9 5555 1234</span></li>
+          <li class="flex items-start gap-2"><svg class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span id="footer-email">contacto@solarandina.cl</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 pt-6 border-t border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+      <div>© <span data-year>2026</span> SolarAndina Energía SpA · Todos los derechos reservados</div>
+      <div class="flex gap-4">
+        <a href="privacidad.html" class="hover:text-amber-400">Política de privacidad</a>
+        <a href="terminos.html" class="hover:text-amber-400">Términos y condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+  <a id="wa-float" href="#" class="whatsapp-float" aria-label="WhatsApp">
+    <svg class="w-7 h-7 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+  </a>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const fa = document.getElementById("footer-address"); const fp = document.getElementById("footer-phone"); const fe = document.getElementById("footer-email");
+      if (fa) fa.textContent = BUSINESS.addressShort + ", Santiago";
+      if (fp) fp.textContent = BUSINESS.phone;
+      if (fe) fe.textContent = BUSINESS.email;
+      const waLink = `https://wa.me/${BUSINESS.whatsappRaw}?text=${encodeURIComponent("Hola, me interesa un estudio solar.")}`;
+      const waFloat = document.getElementById("wa-float");
+      if (waFloat) waFloat.href = waLink;
+
+      const plansGrid = document.getElementById("plans-grid");
+      if (plansGrid && typeof PLANS !== "undefined") {
+        plansGrid.innerHTML = PLANS.map(p => `
+          <article class="relative bg-neutral-900 ${p.highlighted ? "border-amber-500 ring-1 ring-amber-500/30 scale-[1.02] lg:scale-105" : "border-neutral-800"} border-2 rounded-2xl p-7 card-hover reveal">
+            ${p.badge ? `<span class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full text-xs font-black gradient-bg text-neutral-900 uppercase">${p.badge}</span>` : ""}
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-black mb-1">${p.name}</h3>
+              <p class="text-sm text-neutral-400">${p.tagline}</p>
+            </div>
+            <div class="text-center mb-6">
+              ${p.priceOld ? `<div class="text-sm text-neutral-500 line-through">${fmtCLP(p.priceOld)}</div>` : ""}
+              <div class="text-4xl font-black gradient-text">${fmtCLP(p.price)}</div>
+              <div class="text-xs text-neutral-400 mt-2">${p.kWp} · ${p.panels}</div>
+              <div class="text-sm text-emerald-400 font-semibold mt-2">${p.savings}</div>
+            </div>
+            <ul class="space-y-2 mb-6 text-neutral-300 text-sm">
+              ${p.features.map(f => `<li class="flex items-start gap-2"><svg class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>${f}</span></li>`).join("")}
+            </ul>
+            <a href="contacto.html?plan=${p.id}" class="${p.highlighted ? "btn-primary gradient-bg text-neutral-900" : "bg-white/5 hover:bg-white/10 text-white border border-white/10"} w-full px-5 py-3 rounded-lg font-bold inline-flex items-center justify-center gap-2 transition">
+              Solicitar este plan
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" x2="19" y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+        `).join("");
+      }
+
+      const indPrices = document.getElementById("ind-prices");
+      if (indPrices && typeof SERVICES !== "undefined") {
+        const individual = SERVICES.filter(s => s.priceFrom > 0);
+        indPrices.innerHTML = individual.map(s => `
+          <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-5 card-hover reveal">
+            <div class="flex items-start justify-between gap-3 mb-2">
+              <h4 class="font-bold">${s.title}</h4>
+              <span class="text-xs px-2 py-0.5 rounded-full bg-white/5 text-neutral-400 whitespace-nowrap">${s.category}</span>
+            </div>
+            <p class="text-xs text-neutral-400 mb-3 leading-relaxed">${s.description}</p>
+            <div class="text-sm">
+              <span class="text-neutral-500">Desde</span>
+              <span class="text-amber-400 font-black ml-1">${fmtCLP(s.priceFrom)}</span>
+            </div>
+          </div>
+        `).join("");
+      }
+
+      const faqList = document.getElementById("faq-list");
+      if (faqList && typeof FAQ !== "undefined") {
+        faqList.innerHTML = FAQ.map(f => `
+          <details class="faq-item bg-neutral-900 border border-neutral-800 rounded-xl reveal">
+            <summary class="p-5 flex items-center justify-between gap-4 font-semibold hover:bg-white/5 transition">
+              <span>${f.q}</span>
+            </summary>
+            <div class="faq-content px-5 pb-5 text-sm text-neutral-300 leading-relaxed">${f.a}</div>
+          </details>
+        `).join("");
+      }
+    });
+  </script>
+</body>
+</html>
